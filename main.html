@@ -4,12 +4,15 @@
 
 <head>
 	<style>
-		p::before{
+		#container{
+			margin:20px;
+		}
+		#container::before{
 	content:"Befor Element";
 	color:#f00;
 			font-size:20px;
 }
-		p::after{
+		#container::after{
 			content:"After Element";
 			color:#f00;
 			font-size:20px;
@@ -19,7 +22,9 @@
 </head>
 
 <body>
-	<p>This is the main container element</p>
+	<div id="container">
+	This is the main container element
+	</div>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
